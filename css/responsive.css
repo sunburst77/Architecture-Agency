@@ -1,0 +1,370 @@
+@media only all and (max-width: 768px) {
+  /* Entire Layout */
+  .cd-section {
+    height: auto;
+  }
+  .cd-section > div {
+    height: auto;
+  }
+  .content {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Header */
+  header {
+    z-index: 100;
+    transition: .5s;
+  }
+  header.active {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-bottom: 1px solid #eee;
+  }
+  .gnb-inner {
+    width: calc(100% - 10px);
+  }
+  .gnb {
+    background: #fff;
+    position: fixed;
+    right: -250px; top: 0;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.13);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+  }
+  .menu {
+    display: block;
+    margin-top: 60px;
+  }
+  .menu a {
+    display: block;
+    text-align: right;
+    color: #000;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .slogan {
+    display: none;
+  }
+  .trigger {
+    display: block;
+    position: absolute;
+    top: 20px; right: 20px;
+    width: 24px; height: 14px;
+  }
+  .trigger span {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    transition: .5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0; left: 0;
+  }
+  .trigger span:nth-child(2) {
+    width: 80%;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+  }
+  .trigger span:nth-child(3) {
+    top: calc(100% - 2px); left: 0;
+  }
+  .gnb.active {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  .gnb.active + .trigger span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .gnb.active + .trigger span:nth-child(2) {
+    opacity: 0;
+  }
+  .gnb.active + .trigger span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  /* Hiring Button */
+  .btn-hiring {
+    right: 20px;
+    bottom: 20px;
+  }
+  .cd-vertical-nav {
+    display: none;
+  }
+  
+    /* ################## Section : Home ################## */
+  .home-inner {
+    height: 100vh;
+  }
+  .welcome-text {
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 100%;
+  }
+  .home-heading {
+    margin-left: 20px;
+  }
+  .home-heading span {
+    font-size: 50px;
+  }
+
+  /* ################## Section : About ################## */
+  .about-inner {
+    height: auto;
+    padding: 20px;
+    background: #0dace3;
+  }
+  .about-items {
+    width: 100%;
+    position: static;
+    margin-left: 0;
+    transform: none;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .item img {
+    height:70px;
+    float:none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .item span h3 {
+    font-size: 26px;
+  }
+
+  /* ################## Section : Project ################## */
+  .project-inner {
+    height: auto;
+    border: none;
+  }
+  .project-inner .btn {
+    width: 100%; 
+    /* bottom: 15px; */
+  }
+  .tabs {
+    height: auto;
+  }
+  .tab {
+    height: auto;
+    /* float: none; */
+  }
+  .tab > div {
+    height: auto;
+    float: none;
+  }
+  .project-info {
+    width: 100%;
+    padding: 20px;
+    padding-top: 70px;
+  }
+  .project-info::before {
+    font-size: 100px;
+    top: 0;
+  }
+  .project-photo {
+    width: 100%;
+    padding: 20px;
+  }
+  .project-info p {
+    position: relative;
+  }
+  .project-info .detail {
+    text-align: center;
+  }
+  .project-info .detail div {
+    padding: 0;
+    width: 30%;
+  }
+  .project-info .detail div:first-child {
+    width: 35%;
+  }
+  .project-info .detail div span {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .view-project {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  /* ################## Section : Plan ################## */
+  .plan-inner {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .plan-feature {
+    position: static;
+    width: 100%;
+    transform: none;
+  }
+  .plan-info {
+    margin-bottom: 40px;
+  }
+  .plan-info > div {
+    float: none;
+  }
+  .plan-heading {
+    width: 100%;
+    padding-right: 0;
+  }
+  .plan-photo {
+    width: 100%;
+  }
+  .plan-photo img {
+    width: 100%;
+    height: auto;
+  }
+  /* Slick Custom CSS */
+  .history-slider .slick-slide {
+    padding-right: 0px !important;
+  }
+
+  /* ################## Section : Awards ################## */
+  .awards-inner {
+    height: auto;
+    border: none;
+  }
+  .awards-inner > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .victory-jump {
+    text-align: center;
+  }
+  .about-heading,
+  .victory-jump img {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 40px 20px;
+  }  
+
+  /* ################## Section : Location ################## */
+  .location-inner {
+    height: auto;
+    position: relative;
+  }
+  .location-inner::before {
+  }
+  .feature {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 40px 0;
+  }
+  .feature > div {
+    float: none;
+    padding: 20px;
+  }
+  .office {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .service {
+    width: 100%;
+  }
+
+  /* ################## Section : Contact ################## */
+  .contact-inner {
+    height: auto;
+    padding: 40px 0;
+  }
+  .contact-feature {
+    position: static;
+    width: 100%;
+    transform: none;
+  }
+  .contact-feature > div {
+    float: none;
+    width: 100%;
+  }
+  
+  /* ################## SubPage : Hiring ################## */
+  .hiring-main {
+    height: 300px;
+  }
+  .hiring-heading {
+    width: 100%;
+    top: 65%;
+  }
+  .hiring-heading h1 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .hiring-info {
+    padding: 0 20px;
+  }
+  .hiring-info > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .hiring-slogan {
+    padding: 50px 20px;
+  }
+  .hiring-slogan p {
+    font-size: 24px;
+    width: 100%;
+  }
+  .hiring-slogan p::before {
+    position: static;
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .center-parent {
+    /* text-align: center; */
+  }
+  .center-child {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .photo img {
+    position: static;
+    transform: none;
+  }
+  .hiring-contact ul {
+    display: block;
+    width: 100%;
+  }
+  .center-child h2 {
+    font-size: 22px;
+  }
+
+  /* ################## SubPage : Project ################## */
+  .project-main {
+    height: 70vh;
+  }
+  .project-main .hiring-heading h1 {
+    font-size: 40px;
+  }
+  .project-detail .project-info,
+  .project-detail2 .project-info,
+  .project-detail3 .project-info {
+    padding: 0;
+  }
+  .project-detail .project-info, .project-detail2 .project-info, .project-detail3 .project-info {
+    font-size: 19px;
+  }
+  /* Featherlight Mobile CSS */
+  .featherlight .featherlight-content {
+    padding: 0;
+  }
+  .featherlight .featherlight-close-icon {
+    top: 32px;
+    right: 20px;
+    font-size: 24px;
+  }
+}
+
